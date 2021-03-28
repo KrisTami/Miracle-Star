@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Testing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+
+<div class="a">Advertisement</div>
+
+<script type="text/javascript">
+<!--
+	var adblock = true;
+//-->
+</script>
+<script type="text/javascript" src="http://www.geocities.ws/crystaltatsuya/adss/ad/adframe.js"></script>
+<script type="text/javascript">
+<!--
+	if(adblock) {
+		var allElements = document.getElementsByTagName('div');
+		for (var i = 0; i < allElements.length; i++) {
+			if (allElements[i].className == 'a') {
+				allElements[i].innerHTML = 'hiiiii';
+			}
+		}
+	}
+// http://detect-ad-blocking-software.webconrad.com/
+//-->
+</script>
+
+</body>
+</html>
