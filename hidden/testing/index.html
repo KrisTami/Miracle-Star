@@ -2,9 +2,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Testing abDetector</title>
-	<script type="text/javascript" src="abDetector.js"></script>
+	<script type="text/javascript" src="ad.js"></script>
 </head>
 <body>
-	<div id="ab-message" style="display: none">Looks like you've enabled AdBlock. Ads stink, we know. But this is how we pay our servers to provide you free content!</div>
+	<div id="advert"></div>
+	<p>Hello!</p>
+<script type="text/javascript">
+var adblock = true;
+</script>
+<script type="text/javascript" src="ad.js"></script>
+<script type="text/javascript">
+if(adblock) {
+  alert('That Adblock is not your fault!');
+}
+</script>
 </body>
 </html>
